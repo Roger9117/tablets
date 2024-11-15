@@ -1,0 +1,113 @@
+/* Estilos globales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f1eded;
+    color: #e8e6eb;
+}
+
+/* Header */
+header {
+    background-color: #422380;
+    color: rgb(245, 243, 243);
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header .container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 1rem;
+}
+
+nav ul li a {
+    color: rgb(30, 182, 209);
+    text-decoration: none;
+}
+
+/* Secciones */
+.seccion {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.seccion h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.seccion p, .seccion ul {
+    text-align: justify;
+}
+
+.seccion ul {
+    margin: 1rem 0;
+    padding-left: 1.5rem;
+}
+
+.seccion ul li {
+    margin-bottom: 0.5rem;
+}
+
+/* Modelos */
+.modelos {
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+.modelo {
+    background-color: rgb(29, 187, 192);
+    border: 1px solid #faf5f5;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgb(56, 10, 221);
+    padding: 1rem;
+    text-align: center;
+    width: 300px;
+}
+
+.modelo h3 {
+    margin-top: 0;
+    color: #19196d;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #333;
+    color: rgb(238, 233, 233);
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+@keyframes moverImagen {
+    0% {
+      transform: translateX(0); /* Posición inicial */
+    }
+    100% {
+      transform: translateX(300px); /* Mueve la imagen 300px a la derecha */
+    }
+  }
+
+  img {
+    animation: moverImagen 2s linear infinite; /* Aplica la animación */
+  }

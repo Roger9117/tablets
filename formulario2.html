@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+    </head>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('3.png'); 
+            background-size: cover;
+            background-attachment: fixed;
+        }
+    </style>
+<body>
+    <h1> Formulario de registro de la compra</h1>
+
+    <form onsubmit="return validarFormulario()">
+        <label for="nombre">Nombre Completo:</label>
+        <input type="text" id="nombre" name="nombre" placeholder="" required><br>
+
+        <label for="email">Correo Electrónico:</label>
+        <input type="email" id="email" name="email" placeholder="" required><br>
+
+        <label for="ciudad">ciudad:</label>
+        <input type="text" id="ciudad"name ="ciudad" placeholder="" required><br>
+
+        <label for="zona o localidad">zona o localidad:</label>
+        <input type="text" id="zona o localidad"name ="zona o localidad" placeholder="" required><br>
+
+        <label for="numero de telefono">numero de telefono:</label>
+        <input type="text" id="numero de telefono"name ="numero de telefono" placeholder="" required><br>
+        
+        <label for="">password</label>
+        <input type="password" name=""id=""><br>
+        <label for="">Edad:</label>
+        <input type="number" name=""id=""><br>
+
+        <label for="">color</label>
+        <input type="color"><br>
+
+        <label for="">fecha de nacimiento</label>
+        <input type="date" min="2000-12-31"max="2021-01-01"><br>
+
+
+        <label for="femenino">femenino</label>
+        <input type="radio" id="masculino"name="genero" value="masc">
+        <label for="masculino">masculino</label>
+        <br>
+        <h2>metodo de pago</h2>
+        <input type="radio" id="efectivo"name="" value="feme">
+        <label for="efectivo">efectivo</label>
+        <input type="radio" id="tarjeta de credito"name="" value="feme">
+        <label for="tarjeta de credito">tarjeta de credito</label>
+        <h3>inserte un comentario</h3>
+        <label for="">comenterio:</label><br>
+        <textarea name="" id=""cols="90"rows="10"></textarea><br>
+        <button onclick="window.history.back()" href="index.html">regresar</button>
+
+        <button type="sumbt" onclick="mostrarmensaje()">enviar</button>
+    </form>
+        <script>
+            function validarformulario() {
+                const nombre=
+                document.getElementById("nombre").value;
+                const password=
+                document.getElementById("password").value;
+                const Edad=
+                document.getElementById("Edad:").value;
+                const correo=
+                document.getElementById("correo:").value;
+                const color=
+                document.getElementById("color").value;
+                const fechadenacimiento=
+                document.getElementById("fecha de nacimiento").value;
+                const genero=
+                document.getElementById("genero").value;
+
+                const telefono=
+                document.getElementById("telefono").value;
+                const ciudad=
+                document.getElementById("ciudad").value;
+                const localidad=
+                document.getElementById("zona o localidad").value;
+                const domicilio=
+                document.getElementById("domicilio").value;
+                const femenino=
+                document.getElementById("femenino").value;
+                const masculino=
+                document.getElementById("masculino").value;
+                const efectivo=
+                document.getElementById("efectivo").value;
+                    if (nombre===""||password===""||Edad===""||correo===""||color===""||fechadenacimiento===""||
+                genero===""||telefono===""||ciudad===""||localidad===""||domicilio===""||
+                femenino===""||masculino==="") {
+                    function mostrarmensaje(){
+                    alert("por favor complete todos los campos antes de enviar el formulario de compra");
+                          return false;
+                }
+                    alert("muchas gracias por su compra el envio tardara al menos 24 horas o maximo 48 horas" );
+                          return true
+            }
+                }
+
+
+            </script>
+            
+</body>
+</html>
